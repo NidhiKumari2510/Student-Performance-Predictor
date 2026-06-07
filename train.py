@@ -37,3 +37,18 @@ pickle.dump(
 )
 
 print("Model Saved")
+
+feature_importance = pd.DataFrame(
+    {
+        "Feature": X.columns,
+        "Importance": model.feature_importances_
+    }
+)
+
+feature_importance = feature_importance.sort_values(
+    by="Importance",
+    ascending=False
+)
+
+print("\nTop 10 Important Features:\n")
+print(feature_importance.head(10))

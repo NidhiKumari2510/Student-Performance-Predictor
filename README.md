@@ -1,39 +1,69 @@
 # Student Performance Predictor
 
-A Machine Learning project that predicts a student's final grade (G3) using academic, social, and personal factors.
+## Overview
+
+This project uses Machine Learning to predict a student's final academic grade (G3) based on demographic, academic, and social factors.
+
+The model is trained on the Student Performance Dataset and uses Random Forest Regression to learn relationships between study habits, previous grades, family background, and final performance.
+
+## Features
+
+* Data preprocessing using Pandas
+* Categorical feature encoding using One-Hot Encoding
+* Train-Test Split for model evaluation
+* Random Forest Regressor implementation
+* Model persistence using Pickle
+* Performance evaluation using R² Score
+
+## Dataset Features
+
+Examples of input features:
+
+* Study Time
+* Absences
+* Family Support
+* Internet Access
+* Previous Grades (G1, G2)
+* Parental Education
+* Health Status
+
+Target Variable:
+
+* G3 (Final Grade)
+
+## Results
+
+Model Achieved:
+
+* R² Score: 0.805
 
 ## Tech Stack
 
-- Python
-- Pandas
-- Scikit-Learn
-- Random Forest Regressor
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
+* Pickle
 
 ## Project Structure
 
 Student-Performance-Predictor/
+
 ├── data/
+
 ├── models/
-├── notebooks/
+
 ├── train.py
+
 ├── predict.py
-├── app.py
 
-## Current Progress
+├── requirements.txt
 
-- Dataset loaded
-- Data preprocessing completed
-- Train-test split completed
-- Random Forest model trained
-- Model evaluation completed
-- Model saving/loading implemented
-
-## Result
-
-R² Score: 0.805
+└── README.md
 
 ## Future Improvements
 
-- Streamlit UI
-- Feature importance visualization
-- Model comparison
+* Hyperparameter Tuning
+* Feature Importance Analysis
+* Interactive Prediction Interface
+* Model Comparison with Other Algorithms
